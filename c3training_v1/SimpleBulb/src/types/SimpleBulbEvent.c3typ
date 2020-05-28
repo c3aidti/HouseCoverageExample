@@ -1,0 +1,19 @@
+
+
+/**
+* SimpleBulbEvent.c3typ
+* An event that happens to a single {@link SmartBulb}.
+* originally made from SmartBulbEvent.c3typ
+*/
+entity type SimpleBulbEvent schema name "SMP_BLB_EVNT" {
+ // The time at which this event ended.
+ end: datetime
+ // The time at which this event began.
+ start: datetime
+ // The event code used to distinguish events.
+ eventCode: string
+ // The type of this event.
+ eventType: string
+ // The {@link SmartBulb} connected to this event.
+ simpleBulb: SimpleBulb
+}

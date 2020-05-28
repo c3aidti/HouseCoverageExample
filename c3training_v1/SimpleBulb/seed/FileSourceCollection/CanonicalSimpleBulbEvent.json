@@ -1,0 +1,11 @@
+{
+    "id": "CanonicalSimpleBulbEvent",
+    "name": "CanonicalSimpleBulbEvent",
+    "source": {
+      "typeName": "CanonicalSimpleBulbEvent"
+    },
+    "sourceSystem": {
+          "id": "Legacy"
+    }
+  }
+  

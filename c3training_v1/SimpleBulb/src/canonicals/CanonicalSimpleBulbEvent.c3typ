@@ -1,0 +1,21 @@
+
+
+/**
+* This type represents the raw data that will represent {@link SmartBulbEvent}
+* originally coming from CanonicalSmartBulbEvent.c3typ file
+information.
+*/
+type CanonicalSimpleBulbEvent mixes Canonical<CanonicalSimpleBulbEvent> {
+ // This represents the id for a {@link SimpleBulbEvent}
+ id: string
+ // This represents the id of a {@link SimpleBulb}
+ bulb: string
+ // This represents the eventCode of a {@link SimpleBulbEvent}
+ eventCode: string
+ // This represents the eventType of a {@link SimpleBulbEvent}
+ eventType: string
+ // This represents a datetime to use as the start of a {@link SimpleBulbEvent}
+ start: datetime
+ // This represents a datetime to use as the end of a {@link SimpleBulbEvent}
+ end: datetime
+}

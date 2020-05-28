@@ -1,0 +1,11 @@
+{
+    "id": "CanonicalSimpleBulb",
+    "name": "CanonicalSimpleBulb",
+    "source": {
+      "typeName": "CanonicalSimpleBulb"
+    },
+    "sourceSystem": {
+          "id": "Legacy"
+    }
+ }
+  

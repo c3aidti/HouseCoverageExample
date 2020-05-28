@@ -1,0 +1,18 @@
+/**
+* SimpleBulb.c3typ is a simplified version of 
+* c3ai's SmartBulb.c3typ
+* A bulb capable of storing location and maybe 1 simple function.
+*/
+
+entity type SimpleBulb extends LightBulb mixes MetricEvaluatable type key "SIMPLE_BLB"
+{
+ // The latitude of this bulb.
+ latitude: double
+ // The longitude of this bulb.
+ longitude: double
+ /*
+ * Returns the event duration of this simpleBulb's event.
+ */
+ eventDurationInMins: function(bulbId: string): double js server
+
+}
