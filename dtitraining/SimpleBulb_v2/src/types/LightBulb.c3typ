@@ -1,25 +1,40 @@
 /*
 * Copyright 2009-2019 C3, Inc. All Rights Reserved.
-* This material, including without limitation any software, is the confidential trade secret
-* and proprietary information of C3 and its licensors. Reproduction, use and/or distribution
-* of this material in any form is strictly prohibited except as set forth in a written
-* license agreement with C3 and/or its authorized distributors.
-* This product may be covered by one or more U.S. patents or pending patent applications.
 ~*/
 
 /**
-* LightBulb.c3typ
+* LightBulb.c3typ - 
 * A single light bulb.
 */
+
+/**
+* A C3 Type is akin to a class in Java, and describes data fields, operations and static functions that can be called on the type by one or more applications. The difference is that a C3 Type is not tied to any particular programming language. 
+* C3 Type could represent any entity, such as an apartment, a horse, a sensor measurement, or a machine learning prediction model.
+*/
+
+/**
+* In our SimpleBulb project, LightBulb type is the "base" type for {@link SimpleBulb} type.
+* If you remove the inherited type in current document by unselecting the "Inherited" fields and methods on the right top corner of the console, you would be able to see the fields just like what you declared in the c3typ file.
+*/
+
+/**
+* Some notes for each keywords in the delaration of LightBulb type:
+* 1. "extendable": this keyword makes LightBulb type inherting from {@link Extendable} type and becomes a "base" type that other types (such as {@link SimpleBulb} Type) could extend on this, which means those inherted types can inherit all fields and methods from LightBulb type.
+* 2. "entity": this keyword makes LightBulb inherting from {@link Persistable} type and becomes a data table that will be stored in the "LGHT_BLB" table in the database. This also means LightBulb will inherit all fields and methods from {@link Persistable}, such as the field "id".
+* 3. "schema name": this two keywords are the result of "entity" keyword, and are representing the table name of LightBulb in database.
+*/
+
 extendable entity type LightBulb schema name "LGHT_BLB" {
  // The type of this light bulb.
- // The values of this field can be 'LED', 'INCAN', or 'CFL'. Other values will throw an error.
+ // The values of this field can be 'LED' (LED Lamp), 'INCAN' (Incandescent Lightbulb), or 'CFL' (Compact Fluorescent Lamp). 
+ // Other values will throw an error.
  bulbType: string enum('LED', 'INCAN', 'CFL')
 
  // The light bulb's wattage
  wattage: decimal
 
  // The name of this light bulb's {@link Manufacturer}.
+ // Currently, we have "Bell", "GE", "Philips", three different Manufacturers.
  manufacturer: Manufacturer
  
  // The time at which this light bulb was manufactured.
