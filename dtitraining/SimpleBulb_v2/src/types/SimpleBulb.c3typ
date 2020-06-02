@@ -1,7 +1,28 @@
 /**
 * SimpleBulb.c3typ is a simplified version of 
-* c3ai's SmartBulb.c3typ
+* c3.ai's SmartBulb.c3typ
 * A bulb capable of storing location and maybe 1 simple function.
+*/
+
+/**
+* As mentioned in {@link LightBulb} Type, SimpleBulb type is a type that extends on LightBulb Type. Therefore, SimpleBulb contains every field and method from LightBulb Type, such as id (from {@link Persistable}), wattage (from LightBulb), etc.. 
+*/
+
+/**
+* "mixes" is like sub-classing in Java or C++, but users can mix multiple c3types.
+*/
+
+/**
+* Since SimpleBulb extends LightBulb, it will not create a new table, but assign a key using "type key" keywords. In database, column names of SimpleBulb type will be prefixed as "SIMPLE_BLB".
+*/
+
+/**
+* The method "eventDurationInMins" is defined at SimpleBulb.js. It is a method that SimpleBulb contains. Users can call it by typing the example in the console or jupyter: "SimpleBulb.eventDurationInMins('SMBLB1')".
+* More details on method "eventDurationInMins":
+* 1. "bulbId: string" - parameter name: bulbId; type of the parameter: string
+* 2. "double" - return type will be double
+* 3. "js" - this function is written in javascript
+* 4. "server" - this function is running on server which is close to the original dataset. If you want to learn more on this (other options are "client" and "all"), please following on this URL for method: https://developer.c3.ai/docs/7.12.0/guide/guide-c3aisuite-basic/defining-methods
 */
 
 entity type SimpleBulb extends LightBulb mixes MetricEvaluatable type key "SIMPLE_BLB"

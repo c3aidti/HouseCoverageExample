@@ -1,6 +1,6 @@
 # SimpleBulb
 
-The c3training version contains the simplest version of SmartBulb for data integration.
+The SimpleBulb package contains the simplest version of SmartBulb for data integration. The package originally created and copyrighted from c3.ai.
 
 
-The c3training_v1 version contains 2 csvs and a js method.
+
