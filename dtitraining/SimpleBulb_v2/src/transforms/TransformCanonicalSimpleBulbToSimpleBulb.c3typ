@@ -6,6 +6,19 @@
 * TransformCanonicalSmartBulbToSmartBulb.c3typ
 */
 
+/**
+* A Canonical Transform, or in short a Transform, is a mapping between a Canonical and an Entity Type. In current example, this Transform defines the relationship between a canonical ({@link CanonicalSimpleBulb}) and a persistable C3 target Type ({@link SimpleBulb}).
+*/
+
+/**
+* Here are more details inside of implementation:
+* 1. mixes SimpleBulb - The Transform will always mixes its persistable C3 target Type, which is "SimpleBulb" in this example.
+* 2. transforms CanonicalSimpleBulb - The Transform will always transforms the Canonical, which is "CanonicalSimpleBulb" in this example.
+* 3. id: ~ expression "SN" - (1) "id" represents which field will be transformed into the SimpleBulb type. And also, since the SimpleBulb is a persistable type, the "id" is actually the inherited field from {@link Persistable} type in SimpleBulb type; (2) ~ expression "SN" represents that data is every entry which is coming from the field "SN" of SimpleBulb.csv file.
+* 4. manufacturer: ~ expression {id: "Manufacturer"} - This shows the data is coming from the field "id" of a foreign type "Manufacturer". More details could be found in {@link TransformCanonicalSimpleBulbToManufacturer} and {@link Manufacturer}.
+* 5. if you want to assign constant, you can assign things like: `field: ~ express {id: "'constant'"}`. In this example, you are assigning string 'constant' to every entry in field.
+* 6. the expression function could be so fancy, more usage details at {@link ExpressionEngineFunction}.
+*/
 
 type TransformCanonicalSimpleBulbToSimpleBulb mixes SimpleBulb transforms CanonicalSimpleBulb {
 

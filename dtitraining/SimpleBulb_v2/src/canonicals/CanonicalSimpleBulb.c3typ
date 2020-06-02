@@ -4,6 +4,17 @@
 * This file is a modification for original c3ai file CanonicalSmartBulb.c3typ
 */
 
+/**
+* The Canonical is a standard format for representing and receiving data. Users could treat it like a schema of a dataset.
+*/
+
+/**
+* The Canonical in C3 usually contains the following:
+* 1. mixes Canonical<CanonicalSimpleBulb> - every Canonical type mixes with Canonical Type, and <> itself.
+* 2. When users open the source file SimpleBulb.csv, every field will make sense. 
+* 3. If you look for the details on each data type, go {@link PrimitiveType}.
+*/
+
 type CanonicalSimpleBulb mixes Canonical<CanonicalSimpleBulb> {
  // This represents the manufacturer of a {@link LightBulb}
  Manufacturer: string
