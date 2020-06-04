@@ -1,6 +1,8 @@
 # SimpleBulb
 
-The SimpleBulb package contains the simplest version of SmartBulb for data integration. The package originally created and copyrighted from c3.ai.
+The dtitraining repo contains packages "SimpleBulb_v2" which is the simplest version of SmartBulb for data integration. It contains 2 simple csvs and one javascript method.
+
+The repo originally created by c3.ai and called c3Training's lightbulbExercise package.
 
 
 

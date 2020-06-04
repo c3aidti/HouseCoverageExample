@@ -1,0 +1,11 @@
+{
+    "id": "CanonicalCensusInfo",
+    "name": "CanonicalCensusInfo",
+    "source": {
+      "typeName": "CanonicalCensusInfo"
+    },
+    "sourceSystem": {
+          "id": "Legacy"
+    }
+  }
+  

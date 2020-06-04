@@ -1,0 +1,26 @@
+
+/**
+* This is a transform type that the estimated percentage of building coverage of each census 2010 block group within the urban areas. 145,434 rows and four columns.
+* GEOID10:  census block group id, 
+* BCR    :  (True BCR) Building coverage ratio as a percentage of the available land area of each census block group. These values are extracted from actual building footprints and limited to a small number of urban communities; refer to the article for more details. This data is used for training and validating of the predictive models (ground truth). Code 9999 indicates that there is no available BCR for this block group; equivalent to column in file D3_block_group_attribute. 
+* avr    :  (modeled BCR) Estimated Building Coverage ratio based on average of predictions from an ensemble of 1000 models trained using Bagging/Bootstrap aggregating approach.  
+* sd     :  Standard deviation of the predictions from the 1000 models
+* Cite: Soliman, Aiman; Mackay, Andrew; Schmidt , Arthur; Allan, Brian; Wang, Shaowen (2018): Dataset for: Quantifying the geographic distribution of building coverage across the US for urban sustainability studies. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-4137411_V1
+*/
+
+
+type TransformCanonicalCoverageStatusToCoverageStatus mixes CoverageStatus transforms CanonicalCoverageStatus {
+
+ // This field will take the value of the "GEOID10" field for the record
+ id: ~ expression "GEOID10"
+
+ // This field will take the value of the "BCR" field for the record
+ trueBCR: ~ expression "BCR"
+
+ // This field will take the value of the "avr" field for the record, from model
+ modelBCR: ~ expression "avr"
+
+ // This field will take the value of the "sd" field for the record, from model
+ modelSDBCR: ~ expression "sd"
+
+}

@@ -1,0 +1,11 @@
+{
+    "id": "CanonicalCoverageStatus",
+    "name": "CanonicalCoverageStatus",
+    "source": {
+      "typeName": "CanonicalCoverageStatus"
+    },
+    "sourceSystem": {
+          "id": "Legacy"
+    }
+ }
+  

@@ -1,0 +1,10 @@
+
+
+/**
+* TODO: TBC here, only has ID at the moment
+* 
+*/
+type TransformCanonicalCensusInfoToCensus mixes Census transforms CanonicalCensusInfoToCensus {
+ // 
+ id: ~ expression "GEOID10"
+}

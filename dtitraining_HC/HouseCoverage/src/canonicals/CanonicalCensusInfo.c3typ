@@ -1,0 +1,10 @@
+
+
+/**
+* TODO: not done yet
+*/
+type CanonicalCensusInfo mixes Canonical<CanonicalCensusInfo> {
+
+ GEOID10: string
+
+}

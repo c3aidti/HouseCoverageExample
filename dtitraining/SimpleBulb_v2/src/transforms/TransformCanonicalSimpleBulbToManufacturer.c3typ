@@ -5,7 +5,7 @@
 {@link Manufacturer} type.
 * this file originally created by c3ai, modified by Yifang
 */
-type TransformCanonicalSimpleBulbToManufacturer mixes Manufacturer transforms CanonicalYifangBulb {
+type TransformCanonicalSimpleBulbToManufacturer mixes Manufacturer transforms CanonicalSimpleBulb {
  // This field will take the value of the "Manufacturer" field for the record
  id: ~ expression "Manufacturer"
 }
