@@ -1,0 +1,10 @@
+
+/**
+* Block Info Canonical
+*/
+
+type CanonicalBlockInfo mixes Canonical<CanonicalBlockInfo> {
+
+ GEOID10: string
+
+}

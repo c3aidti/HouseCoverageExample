@@ -1,0 +1,16 @@
+
+/**
+* This is a transform type that trasformed a csv file with all the urban block groups attributes.
+* All field information could be found at: https://databank.illinois.edu/datasets/IDB-4137411
+*
+*/
+
+
+type TransformCanonicalBlockInfoToBlockInfo mixes BlockInfo transforms CanonicalBlockInfo {
+
+ // This field will take the value of the "GEOID10" field for the record
+ id: ~ expression "concat('\"', GEOID10, '\"')"
+
+ 
+
+}

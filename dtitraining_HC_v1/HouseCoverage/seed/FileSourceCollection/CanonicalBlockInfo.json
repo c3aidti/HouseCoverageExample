@@ -1,0 +1,11 @@
+{
+    "id": "CanonicalBlockInfo",
+    "name": "CanonicalBlockInfo",
+    "source": {
+      "typeName": "CanonicalBlockInfo"
+    },
+    "sourceSystem": {
+          "id": "Legacy"
+    }
+ }
+  
