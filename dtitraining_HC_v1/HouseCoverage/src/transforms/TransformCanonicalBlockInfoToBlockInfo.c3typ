@@ -9,8 +9,121 @@
 type TransformCanonicalBlockInfoToBlockInfo mixes BlockInfo transforms CanonicalBlockInfo {
 
  // This field will take the value of the "GEOID10" field for the record
- id: ~ expression "concat('\"', GEOID10, '\"')"
+ id: ~ expression "GEOID10"
 
- 
+ // proportion of "water masked" block group polygon (i.e. land area) that overlaps a US census urban.
+ prop_urban: ~ expression "PROP_URBAN"
+
+ // 
+ bg_area: ~ expression "BG_AREA"
+
+ //
+ wat_area: ~ expression "WAT_AREA"
+
+ //
+ dev_area: ~ expression "DEV_AREA"
+
+ //
+ ndev_area: ~ expression "NDEV_AREA"
+
+ //
+ land_area: ~ expression "LAND_AREA"
+
+ //
+ med10_age: ~ expression "MED10_AGE"
+
+ //
+ dev_area_r: ~ expression "DEV_AREA_R"
+
+ //
+ ndev_area_r: ~ expression "NDEV_AREA_R"
+
+ //
+ land_area_r: ~ expression "LAND_AREA_R"
+
+ //
+ pct_i_l: ~ expression "PCT_I_L"
+
+ //
+ pct_t_l: ~ expression "PCT_T_L"
+
+ //
+ prp_res_lr: ~ expression "PRP_RES_LR"
+
+ // COMMENTS starts here
+ pop10_ha_lr: ~ expression "POP10_HA_LR"
+
+ //
+ hu10_ha_lr: ~ expression "HU10_HA_LR"
+
+ //
+ eroom_ha_lr: ~ expression "EROOM_HA_LR"
+
+ //
+ nlcd_var_l: ~ expression "NLCD_VAR_L"
+
+ //
+ nlcd_maj_l: ~ expression "NLCD_MAJ_L"
+
+ //
+ nlud_var_l: ~ expression "NLUD_VAR_L"
+
+ //
+ nlud_maj_l: ~ expression "NLUD_MAJ_L"
+
+ //
+ model_bg: ~ expression "Model_BG"
+
+ //
+ cid: ~ expression "CID"
+
+ //
+ bf_are_lr: ~ expression "BF_AREA_LR"
+
+ //
+ no_bf_lr: ~ expression "NO_BF_LR"
+
+ //
+ prp_bf_lr: ~ expression "PRP_BF_LR"
+
+ //
+ prp_bf_isa_lr: ~ expression "PRP_BF_ISA_LR"
+
+ //
+ med10_room: ~ expression "MED10_ROOM"
+
+ //
+ pop10_tot: ~ expression "POP10_TOT"
+
+ //
+ hu10_tot: ~ expression "HU10_TOT"
+
+ //
+ pop10_moe: ~ expression "POP10_MOE"
+
+ //
+ hu10_moe: ~ expression "HU10_MOE"
+
+ //
+ room10_moe: ~ expression "ROOM10_MOE"
+
+ //
+ age10_moe: ~ expression "AGE10_MOE"
+
+ //
+ statefp10: ~ expression "STATEFP10"
+
+ //
+ stateabbrev: ~ expression "STATEABBREV"
+
+ //
+ geodi10_cbsa: ~ expression "GEOID10_CBSA"
+
+ // 
+ countyfp10: ~ expression "COUNTYFP10"
+
+ //
+ tractce10: ~ expression "TRACTCE10"
+
 
 }

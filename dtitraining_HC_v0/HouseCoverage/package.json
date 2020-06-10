@@ -1,6 +1,0 @@
-{
-  "name": "HouseCoverage",
-  "description": "House Coverage related Machine Learning Example",
-  "author": "Yifang Zhang",
-  "dependencies": ["standardDependencies"]
-}

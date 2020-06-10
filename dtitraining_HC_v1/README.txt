@@ -128,3 +128,11 @@ Homer, C., Dewitz, J., Yang, L., Jin, S., Danielson, P., Xian, G., Coulston, J.,
 
 D. M. Theobald, Development and applications of a comprehensive land use classification and map for the us, PloS one 9 (4) (2014) e94628.
 
+
+
+
+Appendex:
+
+You can use the following command to do fetching:
+c3Grid(BlockInfo.fetch({filter: "prop_urban >=0.8 && med10_age > 1990"}))
+

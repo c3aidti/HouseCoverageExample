@@ -1,0 +1,86 @@
+/*
+* Cite: Soliman, Aiman; Mackay, Andrew; Schmidt , Arthur; Allan, Brian; Wang, Shaowen (2018): Dataset for: Quantifying the geographic distribution of building coverage across the US for urban sustainability studies. University of Illinois at Urbana-Champaign. https://doi.org/10.13012/B2IDB-4137411_V1
+*/
+
+/**
+* 
+*/
+
+extendable entity type BlockInfo schema name "BLIF"{
+	
+	prop_urban: decimal
+
+	bg_area: double
+
+	wat_area: double
+
+	dev_area: double
+
+	ndev_area: double
+
+	land_area: double
+
+	med10_age: integer
+
+	dev_area_r: double
+
+	ndev_area_r: double
+
+	land_area_r: double
+
+	pct_i_l: decimal
+
+	pct_t_l: decimal
+
+	prp_res_lr: decimal
+
+	pop10_ha_lr: decimal
+
+	hu10_ha_lr: decimal
+
+	eroom_ha_lr: decimal
+
+	nlcd_var_l: integer
+
+	nlcd_maj_l: integer
+
+	nlud_var_l: integer
+
+	nlud_maj_l: integer
+
+	model_bg: integer
+
+	cid: integer
+
+	bf_are_lr: double
+
+	no_bf_lr: double
+
+	prp_bf_lr: decimal
+
+	prp_bf_isa_lr: decimal
+
+	med10_room: double
+
+	pop10_tot: integer
+
+	hu10_tot: integer
+
+	pop10_moe: integer
+
+	hu10_moe: integer
+
+	room10_moe: decimal
+
+	age10_moe: integer
+
+	statefp10: string
+
+	stateabbrev: string
+
+	geodi10_cbsa: string
+
+	countyfp10: string
+
+	tractce10: string
+}

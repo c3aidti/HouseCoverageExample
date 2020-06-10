@@ -7,4 +7,83 @@ type CanonicalBlockInfo mixes Canonical<CanonicalBlockInfo> {
 
  GEOID10: string
 
+ PROP_URBAN: decimal
+
+ BG_AREA: double
+
+ WAT_AREA: double
+
+ DEV_AREA: double
+
+ NDEV_AREA: double
+
+ LAND_AREA: double
+
+ MED10_AGE: integer
+
+ All_land: string
+
+ DEV_AREA_R: double
+
+ NDEV_AREA_R: double
+
+ LAND_AREA_R: double
+
+ PCT_I_L: decimal
+
+ PCT_T_L: decimal
+
+ PRP_RES_LR: decimal
+
+ POP10_HA_LR: decimal
+
+ HU10_HA_LR: decimal
+
+ EROOM_HA_LR: decimal
+
+ NLCD_VAR_L: integer
+
+ NLCD_MAJ_L: integer
+
+ NLUD_VAR_L: integer
+
+ NLUD_MAJ_L: integer
+
+ Model_BG: integer
+
+ CID: integer
+
+ BF_AREA_LR: double
+
+ NO_BF_LR: double
+
+ PRP_BF_LR: decimal
+
+ PRP_BF_ISA_LR: decimal
+
+ MED10_ROOM: double
+
+ POP10_TOT: integer
+
+ HU10_TOT: integer
+
+ POP10_MOE: integer
+
+ HU10_MOE: integer
+
+ ROOM10_MOE: decimal
+
+ AGE10_MOE: integer
+
+ STATEFP10: string
+
+ STATEABBREV: string
+
+ GEOID10_CBSA: string
+
+ COUNTYFP10: string
+
+ TRACTCE10: string
+
+
 }
