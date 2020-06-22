@@ -83,4 +83,5 @@ extendable entity type BlockInfo schema name "BLIF"{
 	countyfp10: string
 
 	tractce10: string
+
 }
