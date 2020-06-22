@@ -1,6 +1,0 @@
-{
-  "name": "dtitraining",
-  "version": "1.1.1",
-  "description": "Training Repository for Yifang at NCSA",
-  "dependencies": { "server" : "7.9.10" }
-}

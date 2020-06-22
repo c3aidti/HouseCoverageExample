@@ -1,6 +1,0 @@
-{
-  "name": "SimpleBulb_v2",
-  "description": "Lightbulb Practice for Yifangs demo",
-  "author": "Yifang Zhang",
-  "dependencies": ["standardDependencies"]
-}
