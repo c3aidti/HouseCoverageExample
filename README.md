@@ -9,7 +9,7 @@ This is a good starting package to show how both integration of dataset and pred
 ## Python Implementation
 To execute the python implementation, first use conda to install a new environment with the packages contained in env.yaml.
 ```
-conda create -p ./venv -f ./env.yaml
+conda env create -p ./venv -f ./env.yaml
 ```
 Then, load the environment, and launch jupyter notebook.
 ```
