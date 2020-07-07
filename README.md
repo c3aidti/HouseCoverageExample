@@ -7,9 +7,11 @@ This example is a simplified version from a GIS project "Dataset for: Quantifyin
 This is a good starting package to show how both integration of dataset and prediction works on C3.ai Suite. We implement it first using plain tensorflow and python which you can find in the tensorflow directory while showing how to extract data from C3.ai. Secondly, we implement the similar code on the C3 platform in the C3 directory. We use the KerasPipe Type to encapsulate the tensorflow models. 
 
 ## Python Implementation
-To execute the python implementation, first use conda to install a new environment with the packages contained in env.yaml.
+Before install the env file, first you will need to download the helper function of c3python at: https://github.com/c3aidti/c3python. Extracting the setup.py and c3python folder under ./tensorflow/ folder.
+
+In order to execute the python implementation, first use conda to install a new environment with the packages contained in env.yml.
 ```
-conda env create -p ./venv -f ./env.yaml
+conda env create -p ./venv -f ./env.yml
 ```
 Then, load the environment, and launch jupyter notebook.
 ```
