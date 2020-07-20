@@ -21,9 +21,11 @@ jupyter notebook
 Finally, open House_Coverage_Example.ipynb and execute its cells!
 
 ## C3 Implementation
-Since some of the packages are still depending on your local environment, you will still need to install a new environment with the packages contained in env.yaml.
+Before install the env file, first you will need to download the helper function of c3python at: https://github.com/c3aidti/c3python. Extracting the setup.py and c3python folder under ./c3/ folder.
+
+In order to execute the python implementation, first use conda to install a new environment with the packages contained in env.yml.
 ```
-conda create -p ./venv -f ./env.yaml
+conda env create -p ./venv -f ./env.yml
 ```
 Then, load the environment, and launch jupyter notebook.
 ```
